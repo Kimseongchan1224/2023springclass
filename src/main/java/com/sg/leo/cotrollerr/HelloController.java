@@ -16,4 +16,9 @@ public class HelloController {
 		System.out.println("IMG 파일이 요청됨");
 		return "redirect:img/sonny.jpg";
 	}
+	@GetMapping("/jsp")
+	public String jsp(){
+		System.out.println("Jsp파일이 요청됨");
+		return "hellojsp.jsp";
+	}	
 }
